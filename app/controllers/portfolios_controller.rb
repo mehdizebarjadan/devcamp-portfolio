@@ -2,7 +2,9 @@ class PortfoliosController < ApplicationController
   layout "portfolio"
 
   def index
+    # byebug
     @portfolio_items = Portfolio.all
+    # byebug
   end
 
   def angular
