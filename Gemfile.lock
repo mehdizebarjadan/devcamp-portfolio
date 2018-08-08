@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/mehdizebarjadan/mz_view_tool
+  revision: 0beb4a7e7f1b9cc1c12bfb5733d8ff5ea50ffbde
+  specs:
+    mz_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -212,6 +218,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  mz_view_tool!
   pg (>= 0.18, < 2.0)
   pry-byebug
   puma (~> 3.11)
