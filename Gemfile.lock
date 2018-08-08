@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/mehdizebarjadan/mz_view_tool
-  revision: 0beb4a7e7f1b9cc1c12bfb5733d8ff5ea50ffbde
-  specs:
-    mz_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -112,6 +106,7 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.4)
     multi_json (1.13.1)
+    mz_view_tool (0.1.0)
     nio4r (2.3.1)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
@@ -218,7 +213,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
-  mz_view_tool!
+  mz_view_tool (~> 0.1.0)
   pg (>= 0.18, < 2.0)
   pry-byebug
   puma (~> 3.11)
