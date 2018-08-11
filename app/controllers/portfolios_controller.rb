@@ -5,7 +5,7 @@ class PortfoliosController < ApplicationController
 
   def index
     # byebug
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
     # byebug
   end
 
