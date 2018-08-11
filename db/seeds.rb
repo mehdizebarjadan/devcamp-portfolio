@@ -31,7 +31,7 @@ puts "5 skills created"
     subtitle: "Ruby on Rails",
     body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam dignissimos veniam expedita similique nihil vitae cumque blanditiis itaque vel. Odio expedita eligendi velit aliquid possimus perspiciatis deserunt temporibus quo!",
     main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/356x280"
+    thumb_image: "http://via.placeholder.com/350x200"
   )
 end
 
@@ -41,7 +41,7 @@ end
     subtitle: "Angular",
     body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati totam dignissimos veniam expedita similique nihil vitae cumque blanditiis itaque vel. Odio expedita eligendi velit aliquid possimus perspiciatis deserunt temporibus quo!",
     main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/356x280"
+    thumb_image: "http://via.placeholder.com/350x200"
   )
 end
 
