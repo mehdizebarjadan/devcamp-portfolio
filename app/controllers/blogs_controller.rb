@@ -12,7 +12,7 @@ class BlogsController < ApplicationController
     else
       @blogs = Blog.published.recent.page(params[:page]).per(5)
     end
-    @page_title = "My Portfolio Blog | Mehdi Zeb."
+    @page_title = "My Blog | Mehdi Zebarjadan"
   end
 
   # GET /blogs/1
