@@ -5,6 +5,7 @@ class PortfoliosController < ApplicationController
 
   def index
     @portfolio_items = Portfolio.by_position
+    @page_title = "My Portfolio | Mehdi Zebarjadan"
   end
 
   def sort
