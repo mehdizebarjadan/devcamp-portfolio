@@ -7,7 +7,7 @@
         <%= image_tag "img-mehdi.jpg", width: 280, alt: "profile image", class: 'profile-img' %>
 
         <div class="skills text-muted">
-          <% @skills.order(id: :asc).each do |skill| %>
+          <% @skills.each do |skill| %>
             <div class="skill">
               <h4><%= skill.title %></h4>
               <div class="progress" style="height: 6px;">
