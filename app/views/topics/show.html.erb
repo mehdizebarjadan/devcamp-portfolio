@@ -1,6 +1,9 @@
 <div class="col-md-8 blog-main">
 
-  <h1><%= @topic.title %></h1>
+  <nav class="breadcrumb bg-actions">
+    <%= link_to "Topics", topics_path, class: 'breadcrumb-item text-info' %>
+    <span class="breadcrumb-item active"><%= @topic.title %></span>
+  </nav>
   
   <%= paginate @blogs %>
 

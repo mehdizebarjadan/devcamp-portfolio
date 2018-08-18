@@ -10,6 +10,8 @@ html,
 body {
   // height: 100%;
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  background-color: #faf9f0;
 }
 
 /* stylelint-disable selector-list-comma-newline-after */
@@ -122,7 +124,7 @@ h6 {
  * Blog posts
  */
 .blog-post {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .blog-post-title {
   margin-bottom: 0.25rem;
@@ -173,4 +175,34 @@ h6 {
 .blogcrumb a {
   font-size: 1.25em;
   margin: 0px 10px 0px 10px;
+}
+
+.bg-blue {
+  background-color: #0b2e50;
+}
+
+.bg-lightblue {
+  background-color: #d2ecf1;
+}
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+// .navbar .nav-item.active {
+//   border-left: #444 3px solid;
+// }
+
+.topic {
+  color: #ff5607;
+}
+
+.title {
+  color: #1a4b4d;
+}
+
+.bg-actions {
+  background-color: #edebc8;
 }

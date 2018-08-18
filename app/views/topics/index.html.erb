@@ -1,6 +1,24 @@
 <div class="col-md-8 blog-main">
 
-  <h1>Topics</h1>
+  <%# <h1 class="mb-2">Topics</h1> %>
 
-  <%= render @topics %>  
+  <nav class="breadcrumb bg-actions">
+    <span class="breadcrumb-item active">Topics</span>
+  </nav>
+
+  <% @topics.each do |topic| %>  
+    
+    <div class="row">
+      <div class="col-md-8 my-auto">
+        <div class="card card-block my-2">
+          <p class="mb-0 p-3"><%= link_to topic.title, topic_path(topic), class: 'topic' %></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  <% end %>
+ 
 </div>
+
+   

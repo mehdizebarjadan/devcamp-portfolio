@@ -1,29 +1,15 @@
 <div class="container">
-  <header class="blog-header py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1">
-        <span>
-          <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-        </span>
-        <span>
-          <%= link_to "Topics", topics_path %>
-        </span>
-      </div>
-      <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#">My Blog</a>
-      </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-      </div>
-    </div>
-  </header>
-
-  <%= render 'shared/blog_nav'%>
-
-  <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+  <div class="jumbotron p-3 p-md-5 text-white rounded bg-blue">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+      <h1 class="display-5">Welcome to my blog!</h1>
+      <p class="lead my-3 text-muted">This page is a collection of the best articles, videos and presentations I've found on the topic.</p>
+      <%# <p class="lead mb-0"> %>
+      <p class="lead my-3 text-muted">I'd love to hear your suggestions</p>
+      <p class="lead mb-0">
+        <span>
+          <%= link_to "Topics", topics_path, class: "topic" %>
+        </span>
+      </p>
     </div>
   </div>
 <!--
