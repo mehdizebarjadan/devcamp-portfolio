@@ -1,0 +1,126 @@
+<div class="app-card-container">
+  <div class="card">
+    <h1 class="display-5 mb-4">About Me</h1>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "img-mehdi.jpg", width: 280, alt: "profile image", class: 'profile-img' %>
+        
+        <div class="skills text-muted">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress" style="height: 6px;">
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>  
+
+      </div>
+      <div class="col-md-8">
+        <p class="mt-3">Technically sophisticated front-end engineering professional with solid history of expertise in web page development and web applications. Broad knowledge and success in an engineering environment. Proficient in computer hardware technology; skilled in installation, maintenance and IT equipment support. Wide range of industry knowledge, including technology trends, consulting with clients, developing customized applications, and collaborating with teams to deliver a high-quality end product.</p>
+        <p>
+          <button
+            class="btn btn-outline-info"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+
+          <button
+            class="btn btn-outline-info"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              
+              <div class="row">
+                <div class="col-md-2 my-auto">
+                  <%= image_tag "aabrothers-logo.png", width: 280, alt: "job image", class: 'img-thumbnail border-non' %>
+                </div>
+                <div class="col-md-10 my-auto">
+                  <p class="mb-0"><span class="font-weight-bold">AABrothers Construction Services </span>- Freelance services acquired to design and develop a company website. Provided client consultations to gather requirements and establish project milestones and expectations.</p>
+                </div>                
+              </div>
+
+            </div>
+            <div class="card card-block">
+              
+              <div class="row">
+                <div class="col-md-2 my-auto">
+                  <%= image_tag "tredfield-logo.jpeg", width: 280, alt: "job image", class: 'img-thumbnail border-non' %>
+                </div>
+                <div class="col-md-10 my-auto">
+                  <p class="mb-0"><span class="font-weight-bold">Tradfield International Trading </span>- Freelance services acquired to design and develop a company website. Established project scope document and project milestones in step with the client’s approval.</p>
+                </div>                
+              </div>
+
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              
+              <div class="row">
+                <div class="col-md-2 my-auto">
+                  <%= image_tag "codingdojo-logo.png", width: 280, alt: "job image", class: 'img-thumbnail border-non' %>
+                </div>
+                <div class="col-md-10 my-auto">
+                  <p class="mb-0"><span class="font-weight-bold">Coding Dojo - Silicon Valley </span></p>
+                  <p class="mb-0">Ruby on Rails</p>
+                </div>                
+              </div>
+
+            </div>
+            <div class="card card-block">
+              
+              <div class="row">
+                <div class="col-md-2 my-auto">
+                  <%= image_tag "humber-logo.png", width: 280, alt: "job image", class: 'img-thumbnail border-non' %>
+                </div>
+                <div class="col-md-10 my-auto">
+                  <p class="mb-0"><span class="font-weight-bold">Humber College - Toronto </span></p>
+                  <p class="mb-0">Web development</p>
+                </div>                
+              </div>
+
+            </div>
+            <div class="card card-block">
+              
+              <div class="row">
+                <div class="col-md-2 my-auto">
+                  <%= image_tag "ryerson-logo.png", width: 280, alt: "job image", class: 'img-thumbnail border-non' %>
+                </div>
+                <div class="col-md-10 my-auto">
+                  <p class="mb-0"><span class="font-weight-bold">Ryerson University - Toronto </span></p>
+                  <p class="mb-0">Civil Engineering</p>
+                </div>                
+              </div>
+
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
